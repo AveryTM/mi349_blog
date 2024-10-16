@@ -16,5 +16,29 @@
             </ul>
         </nav>
     </header>
+
+    <form action="/" method="post" class="contact-info-form" netlify>
+        <input type="hidden" id="timestamp" name="timestamp" value="0000">
+        <div class="contact-info-form">
+            <label for="name">Enter Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="contact-info-form">
+            <label for="email">Enter Email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="contact-info-form">
+            <label for="contact-reason">Reason for contact: </label>
+            <select name="contact-reason" id="contact-reason">
+                <option>Saying hi!</option>
+                <option>Looking for a contractor</option>
+                <option>Interested in an interview</option>
+            </select>
+        </div>
+        <div class="contact-info-form">
+            <button type="submit">Submit Request</button>
+        </div>
+        <button type="reset">Reset Form</button>
+    </form>
 </body>
 </html>
