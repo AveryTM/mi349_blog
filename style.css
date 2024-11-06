@@ -5,18 +5,21 @@ html {
     color: #242424;
 }
 
+/*Title and Navigation Bar rules */
 header {
-    background-color: #333;
     color: white;    position: sticky;
     position: sticky;
     top: 0;
 }
 
 h1 {
+    background-color: #333;
     font-size: 3em;
     margin: 0;
     padding-left: 14px;
     border-bottom: 1px solid #bbb;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .navtab {
@@ -25,6 +28,8 @@ h1 {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .navpoint {
@@ -51,29 +56,61 @@ p {
     line-height: 1.4em;
 }
 
+/*Rules for Home page index.html*/
 #blog {
     display: flex;
-    padding: 0;
-    margin: 0;
 }
+
+.blog_heading {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #333;
+}
+
+.blog_title {
+    font-size: 35px;
+}
+
+address {
+    text-decoration: none;
+    color: #242424;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
 .blog_post {
     background-color: bisque;
-    margin: 20px;
+    margin: 50px;
+    padding: 40px;
 }
 #blog1 {
     flex: 1;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
 }
 
 #blog2 {
     flex: 1;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
 }
 
-img{
-    width: 75%;
+img {
+    width: auto;
     height: auto;
     object-fit: scale-down;
-    padding-left: 20px;
-    margin: 0;
-    position: relative;
-    
+    margin: auto;
+    padding: auto;
 }
+
+table, th, td {
+    background-color: white;
+    margin: auto;
+    border: 1px solid;
+}
+
+th {
+    background-color: #04AA6D;
+}
+
+/*
