@@ -1,33 +1,55 @@
 /* style.css */
 
-/* Hex code for theme colors */
-/* DARK - Delta Blue: #3D405B */
-/* CONTRAST/LIGHT -  */
-/* LIGHT/WHITE - Lavender Blush: #FFF2F1 */
 html {
-    background-color: #e3e3e3;
-}
-body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 40px;
     color: #242424;
-    border-top: 10px solid #242424;
-    background-color: white;
 }
 
+header {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+}
 h1 {
     font-size: 3em;
     margin: 0;
+    padding-left: 14px;
+    border-bottom: 1px solid #bbb;
+}
+.navtab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navpoint {
+    float: left;
+}
+
+.navpoint a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navpoint a:hover{
+    background-color: #111;
+}
+
+#active {
+    background-color: #04AA6D;
 }
 
 p {
     line-height: 1.4em;
 }
 
-#blog {
-    border-top: 1px dotted #ccc;
-}
 
-.blog_post {
-    border-bottom: 1px dotted #ccc;
+#blog {
+    display: flex;
 }
