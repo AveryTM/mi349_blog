@@ -2,18 +2,13 @@
 
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #242424;
+    color: #EEF5FC;
+    background-color: #EEF5FC;
 }
 
 /*Title and Navigation Bar rules */
-header {
-    color: white;    position: sticky;
-    position: sticky;
-    top: 0;
-}
-
 h1 {
-    background-color: #333;
+    background-color: #061A40;
     font-size: 3em;
     margin: 0;
     padding-left: 14px;
@@ -22,36 +17,43 @@ h1 {
     border-top-right-radius: 25px;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+}
+
 .navtab {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #061A40;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .navpoint {
     float: left;
+    border-right: 1px solid #bbb;
 }
 
 .navpoint a{
     display: block;
-    color: white;
+    color: #EEF5FC;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navpoint a:hover{
-    background-color: #111;
+    background-color: #030F25;
 }
 
 #active {
-    background-color: #04AA6D;
+    background-color: #8E3B46;
 }
 
+/* Rule for all paragraphs*/
 p {
     line-height: 1.4em;
 }
@@ -61,56 +63,202 @@ p {
     display: flex;
 }
 
-.blog_heading {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-bottom: 1px dashed #333;
-}
-
-.blog_title {
-    font-size: 35px;
-}
-
-address {
-    text-decoration: none;
-    color: #242424;
-    font-size: 1.5rem;
-    margin: 5px;
-}
-
-.blog_post {
-    background-color: bisque;
-    margin: 50px;
-    padding: 40px;
-}
 #blog1 {
     flex: 1;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
 }
 
 #blog2 {
     flex: 1;
+}
+
+/*Rules for blog title, author, and date block*/
+.blog_heading {
+    padding: 10px;
+    margin-bottom: 3px;
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    border: 2px solid #EEF5FC;
+    text-align: center;
+    background-color: #061A40;
 }
 
-img {
-    width: auto;
+.blog_title {
+    font-size: 35px;
+    text-align: center;
+}
+
+address {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+address a {
+    color: #9AA4C1;
+    text-decoration: none;
+}
+
+/*Rules for the main body of the blog post*/
+.blog_post {
+    margin: 40px;
+    padding: 0px;
+}
+
+.blog_body {
+    background-color: #061A40;
+    margin: 0;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+}
+
+/*Rules for blog post images*/
+.image-container {
+    background-color: #061A40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+}
+
+.blog-picture{
+    max-width: 100%;
     height: auto;
-    object-fit: scale-down;
-    margin: auto;
-    padding: auto;
+    padding: 10px;
+    border-radius: 25px;
 }
 
+/*Rules for blog post table Only on blog 1 and is included in body*/
 table, th, td {
-    background-color: white;
+    background-color: #061A40;
     margin: auto;
     border: 1px solid;
+    
 }
 
 th {
-    background-color: #04AA6D;
+    background-color: #8E3B46;
 }
 
-/*
+/*Rules for About html*/
+.biography {
+    margin: 0;
+    padding: 25px;
+}
+
+#bio_title {
+    background-color: #061A40;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+}
+
+#meet_me {
+    background-color: #061A40;
+    display: flex;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+}
+
+#author_image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 5px;
+    align-items: center;    
+}
+
+#me {
+    border-radius: 15px;
+}
+
+#author_bio {
+    flex: 2;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+#interests_hobbies {
+    background-color: #061A40;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+    margin: 4px;
+}
+
+h4 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+#ih_heading {
+    margin: 4px;
+    text-align: center;
+}
+
+.likes_list{
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+}
+
+.likes_heading {
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+    margin: 4px;
+}
+
+#vg {
+    flex: 1;
+}
+
+#sports{
+    flex: 1;
+}
+
+#tv {
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.sub_likes {
+    list-style-type: none;
+    text-align: left;
+}
+
+/*Rules for contact form */
+
+#contact_form {
+    background-color: #061A40;
+    padding-bottom: 50px;
+    margin: 75px 400px;
+    border-radius: 25px;
+    border: 2px solid #EEF5FC;
+    text-align: center;
+}
+
+#form_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    margin: 8px;
+    padding: 14px 40px;
+    border-radius: 10px;
+    border-color: #EEF5FC;
+    color: #EEF5FC;
+    background-color: #8E3B46;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #030F25;
+}
