@@ -122,10 +122,10 @@ address a {
 }
 
 .blog-picture{
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
-    border-radius: 25px;
+    max-width: 90%;
+    max-height: auto;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 /*Rules for blog post table Only on blog 1 and is included in body*/
